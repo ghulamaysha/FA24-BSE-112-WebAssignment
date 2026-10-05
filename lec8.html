@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lecture 8</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="index.html">
+        <img src="images/comsats-logo.png" alt="COMSATS University logo" onerror="this.style.display='none'">
+        <span>Web Technologies</span>
+      </a>
+      <nav><a href="index.html">Home</a></nav>
+    </div>
+  </div>
+
+  <header class="page-head">
+    <p class="eyebrow">Lecture 8</p>
+    <h1>CSS3 Features</h1>
+    <p class="tagline">Modern effects without images or scripts</p>
+  </header>
+
+  <main class="container">
+    <article class="card">
+      <h2>Summary</h2>
+      <p>This lecture covers the visual features introduced in CSS3: rounded corners, gradients, shadows, transforms, transitions and keyframe animations. It also introduces web fonts, custom properties, media queries and cross-browser compatibility.</p>
+
+      <h2>Topics Covered</h2>
+      <ul>
+        <li><strong>Visual Effects</strong>
+          <ul>
+            <li>Rounded corners, gradients, shadows and opacity</li>
+            <li>2D/3D transforms</li>
+          </ul>
+        </li>
+        <li><strong>Motion</strong>
+          <ul>
+            <li>Transitions</li>
+            <li>Keyframe animations</li>
+          </ul>
+        </li>
+        <li><strong>Tooling</strong>
+          <ul>
+            <li>Web fonts, icon fonts and custom properties</li>
+            <li>Media and feature queries</li>
+            <li>Vendor prefixes and cross-browser compatibility</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h2>Example Code</h2>
+<pre><code>.css3-card {
+  padding: 24px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #134b40, #2da084, #6fcf97);
+  box-shadow: 0 8px 20px rgba(31, 112, 97, 0.35);
+  transition: transform 0.3s ease;
+}
+.css3-card:hover {
+  transform: rotate(-2deg) scale(1.04);
+}
+.pulse {
+  animation: pulse 1.6s infinite ease-in-out;
+}
+@keyframes pulse {
+  50% { transform: scale(1.6); opacity: 0.5; }
+}</code></pre>
+
+      <h2>Output</h2>
+      <div class="output">
+        <div class="css3-card">Hover over this card</div>
+        <div style="text-align:center"><span class="pulse"></span></div>
+      </div>
+    </article>
+
+    <nav class="pager">
+      <a href="index.html">Home</a>
+      <a href="lec7.html">Previous Lecture</a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">&copy; 2026 Ghulam Aysha (FA24-BSE-112) &middot; CSC336 Web Technologies</footer>
+</body>
+</html>

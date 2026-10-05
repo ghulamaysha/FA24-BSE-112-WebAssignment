@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lecture 1</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="index.html">
+        <img src="images/comsats-logo.png" alt="COMSATS University logo" onerror="this.style.display='none'">
+        <span>Web Technologies</span>
+      </a>
+      <nav><a href="index.html">Home</a></nav>
+    </div>
+  </div>
+
+  <header class="page-head">
+    <p class="eyebrow"> Lecture 1</p>
+    <h1>Introduction to Web Development</h1>
+    <p class="tagline">How the web works and the words everyone uses for it</p>
+  </header>
+
+  <main class="container">
+    <article class="card">
+      <h2>Summary</h2>
+      <p>This lecture introduces the course and explains the difference between the Internet and the Web. It describes the client-server request-response model, the core terminology of the web, the standards bodies behind it and the main types of web applications.</p>
+
+      <h2>Topics Covered</h2>
+      <ul>
+        <li><strong>Course Introduction</strong>
+          <ul>
+            <li>Course learning outcomes</li>
+            <li>Assessment plan and grading policy</li>
+          </ul>
+        </li>
+        <li><strong>Internet and Web</strong>
+          <ul>
+            <li>Internet vs. Web</li>
+            <li>Client-server request-response model</li>
+            <li>URL/URI, HTTP/HTTPS, DNS, hosting, web server and browser</li>
+          </ul>
+        </li>
+        <li><strong>Standards and Application Types</strong>
+          <ul>
+            <li>W3C, WHATWG, ECMA and IETF</li>
+            <li>Static, dynamic, MPA, SPA and PWA</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h2>Example Code</h2>
+<pre><code>&lt;p&gt;https://www.example.com:443/courses/csc336?week=1#intro&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Protocol: https&lt;/li&gt;
+  &lt;li&gt;Host: www.example.com&lt;/li&gt;
+  &lt;li&gt;Port: 443&lt;/li&gt;
+  &lt;li&gt;Path: /courses/csc336&lt;/li&gt;
+  &lt;li&gt;Query: week=1&lt;/li&gt;
+  &lt;li&gt;Fragment: intro&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+
+      <h2>Output</h2>
+      <div class="output">
+        <p>https://www.example.com:443/courses/csc336?week=1#intro</p>
+        <ul>
+          <li>Protocol: https</li>
+          <li>Host: www.example.com</li>
+          <li>Port: 443</li>
+          <li>Path: /courses/csc336</li>
+          <li>Query: week=1</li>
+          <li>Fragment: intro</li>
+        </ul>
+      </div>
+    </article>
+
+    <nav class="pager">
+      <a href="index.html">Home</a>
+      <a href="lec2.html">Next Lecture</a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">&copy; 2026 Ghulam Aysha (FA24-BSE-112) &middot; CSC336 Web Technologies</footer>
+</body>
+</html>

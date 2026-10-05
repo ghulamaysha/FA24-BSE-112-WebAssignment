@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lecture 5</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="index.html">
+        <img src="images/comsats-logo.png" alt="COMSATS University logo" onerror="this.style.display='none'">
+        <span>Web Technologies</span>
+      </a>
+      <nav><a href="index.html">Home</a></nav>
+    </div>
+  </div>
+
+  <header class="page-head">
+    <p class="eyebrow">Lecture 5</p>
+    <h1>Cascading Style Sheets (CSS) Fundamentals</h1>
+    <p class="tagline">Choosing what to style and how</p>
+  </header>
+
+  <main class="container">
+    <article class="card">
+      <h2>Summary</h2>
+      <p>This lecture introduces CSS syntax and the three ways of adding styles. It covers the main selectors, pseudo-classes, the rules the browser uses to resolve conflicts, and the properties for colour, fonts, text and backgrounds.</p>
+
+      <h2>Topics Covered</h2>
+      <ul>
+        <li><strong>Adding CSS</strong>
+          <ul>
+            <li>CSS syntax</li>
+            <li>Inline, internal and external style sheets</li>
+          </ul>
+        </li>
+        <li><strong>Selectors</strong>
+          <ul>
+            <li>Element, class, id, attribute, grouping and descendant</li>
+            <li>Pseudo-classes and pseudo-elements</li>
+          </ul>
+        </li>
+        <li><strong>Cascade and Properties</strong>
+          <ul>
+            <li>Cascade, specificity and inheritance</li>
+            <li>Colour, font, text and background properties</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h2>Example Code</h2>
+<pre><code>#demo-title { color: #1f7061; }
+.demo-list .done { color: #134b40; font-weight: 700; }
+.demo-list li:hover { background: #d9efe6; }</code></pre>
+
+      <h2>Output</h2>
+      <div class="output">
+        <h3 id="demo-title">Study Checklist</h3>
+        <ul class="demo-list">
+          <li class="done">Read lecture notes</li>
+          <li>Practise selectors</li>
+          <li>Hover over this line</li>
+        </ul>
+      </div>
+    </article>
+
+    <nav class="pager">
+      <a href="index.html">Home</a>
+      <a href="lec4.html">Previous Lecture</a>
+      <a href="lec6.html">Next Lecture</a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">&copy; 2026 Ghulam Aysha (FA24-BSE-112) &middot; CSC336 Web Technologies</footer>
+</body>
+</html>

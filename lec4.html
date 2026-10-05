@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lecture 4</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="index.html">
+        <img src="images/comsats-logo.png" alt="COMSATS University logo" onerror="this.style.display='none'">
+        <span>Web Technologies</span>
+      </a>
+      <nav><a href="index.html">Home</a></nav>
+    </div>
+  </div>
+
+  <header class="page-head">
+    <p class="eyebrow"> Lecture 4</p>
+    <h1>Semantic HTML and HTML Forms</h1>
+    <p class="tagline">Meaningful structure and user input</p>
+  </header>
+
+  <main class="container">
+    <article class="card">
+      <h2>Summary</h2>
+      <p>This lecture separates block-level and inline elements and shows how semantic tags make pages clearer for people, search engines and screen readers. It then builds forms and validates input in the browser with HTML5 attributes.</p>
+
+      <h2>Topics Covered</h2>
+      <ul>
+        <li><strong>Block and Inline</strong>
+          <ul>
+            <li>Block-level vs. inline elements</li>
+            <li>div and span</li>
+          </ul>
+        </li>
+        <li><strong>Semantic Elements</strong>
+          <ul>
+            <li>header, nav, main, section, article, aside, footer</li>
+            <li>Accessibility and SEO benefits</li>
+          </ul>
+        </li>
+        <li><strong>Forms and Validation</strong>
+          <ul>
+            <li>action, method, input types, select, textarea and button</li>
+            <li>required, pattern, min and max</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h2>Example Code</h2>
+<pre><code>&lt;form&gt;
+  &lt;input type="text" placeholder="Name" required&gt;
+  &lt;input type="number" min="1" max="8" placeholder="Lecture"&gt;
+  &lt;select&gt;
+    &lt;option&gt;HTML&lt;/option&gt;
+    &lt;option&gt;CSS&lt;/option&gt;
+  &lt;/select&gt;
+  &lt;button type="submit"&gt;Submit&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+
+      <h2>Output</h2>
+      <div class="output">
+        <form onsubmit="return false">
+          <input type="text" placeholder="Name" required>
+          <input type="number" min="1" max="8" placeholder="Lecture">
+          <select>
+            <option>HTML</option>
+            <option>CSS</option>
+          </select>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </article>
+
+    <nav class="pager">
+      <a href="index.html">Home</a>
+      <a href="lec3.html">Previous Lecture</a>
+      <a href="lec5.html">Next Lecture</a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">&copy; 2026 Ghulam Aysha (FA24-BSE-112) &middot; CSC336 Web Technologies</footer>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lecture 6</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="index.html">
+        <img src="images/comsats-logo.png" alt="COMSATS University logo" onerror="this.style.display='none'">
+        <span>Web Technologies</span>
+      </a>
+      <nav><a href="index.html">Home</a></nav>
+    </div>
+  </div>
+
+  <header class="page-head">
+    <p class="eyebrow">Lecture 6</p>
+    <h1>The CSS Box Model and Display</h1>
+    <p class="tagline">Every element is a box</p>
+  </header>
+
+  <main class="container">
+    <article class="card">
+      <h2>Summary</h2>
+      <p>Every element on a page is a rectangular box. This lecture explains content, padding, border and margin, how sizing and overflow behave, and how the display property changes the way a box sits on the page.</p>
+
+      <h2>Topics Covered</h2>
+      <ul>
+        <li><strong>Box Model</strong>
+          <ul>
+            <li>Content, padding, border and margin</li>
+            <li>Margin collapsing</li>
+          </ul>
+        </li>
+        <li><strong>Sizing</strong>
+          <ul>
+            <li>content-box vs. border-box</li>
+            <li>width, height, min/max constraints and overflow</li>
+          </ul>
+        </li>
+        <li><strong>Display and Spacing</strong>
+          <ul>
+            <li>block, inline, inline-block and none</li>
+            <li>Borders, shadows and consistent spacing</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h2>Example Code</h2>
+<pre><code>.demo-box {
+  width: 220px;
+  padding: 20px;
+  border: 4px solid #1f7061;
+  margin: 16px auto;
+  background: #eef6f3;
+}</code></pre>
+
+      <h2>Output</h2>
+      <div class="output">
+        <div class="demo-box">Content, padding, border and margin</div>
+      </div>
+    </article>
+
+    <nav class="pager">
+      <a href="index.html">Home</a>
+      <a href="lec5.html">Previous Lecture</a>
+      <a href="lec7.html">Next Lecture</a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">&copy; 2026 Ghulam Aysha (FA24-BSE-112) &middot; CSC336 Web Technologies</footer>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CSC336 Web Technologies, Assignment 1 by Ghulam Aysha">
+  <title>Web Technologies</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="index.html">
+        <img src="images/comsats-logo.png" alt="COMSATS University logo" onerror="this.style.display='none'">
+        <span>Web Technologies</span>
+      </a>
+      <nav>
+        <a href="#top">Details</a>
+        <a href="#lectures">Lectures</a>
+      </nav>
+    </div>
+  </div>
+
+  <header class="hero" id="top">
+    <div class="hero-inner">
+      <div class="identity">
+        <div class="logo-badge">
+          <img src="images/comsats-logo.png" alt="COMSATS University logo" onerror="this.parentNode.style.display='none'">
+        </div>
+        <div>
+            <h1>Assignment 1</h1>
+                <p class="course">CSC336 &middot; Web Technologies &middot; Fall 2026</p>
+                <p class="uni">COMSATS University Islamabad, Vehari Campus</p>
+                <p class="dept">Department of Computer Science</p>
+            </div>
+      </div>
+
+      <div class="details">
+        <div class="detail-card">
+          <h3>Submitted By</h3>
+          <p>Ghulam Aysha<span>Reg. No: FA24-BSE-112</span><span>BS Software Engineering</span></p>
+        </div>
+        <div class="detail-card">
+          <h3>Submitted To</h3>
+          <p>Ma'am Yasmeen Jana<span>Instructor, CSC336 Web Technologies</span></p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card" id="lectures">
+      <h2>Lecture Index</h2>
+      <p class="intro">Search for a lecture or open one from the table below.</p>
+
+      <!-- Click on a lecture number or title to view the lecture details -->
+      <p class="hint">Click on a lecture number or title to view lecture details.</p>
+
+      <div class="search-box">
+        <input type="search" id="lecture-search" placeholder="Search lectures, e.g. CSS, HTML, Forms" aria-label="Search lectures" autocomplete="off">
+      </div>
+      <p class="result-count" id="result-count">Showing 8 of 8 lectures</p>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Lecture No</th>
+              <th>Lecture Title</th>
+            </tr>
+          </thead>
+          <tbody id="lecture-rows">
+            <tr data-href="lec1.html">
+              <td class="num"><a href="lec1.html">Lecture 1</a></td>
+              <td><a href="lec1.html">Introduction to Web Development</a></td>
+            </tr>
+            <tr data-href="lec2.html">
+              <td class="num"><a href="lec2.html">Lecture 2</a></td>
+              <td><a href="lec2.html">Tiered Web Architecture</a></td>
+            </tr>
+            <tr data-href="lec3.html">
+              <td class="num"><a href="lec3.html">Lecture 3</a></td>
+              <td><a href="lec3.html">HTML and HTML5 Fundamentals</a></td>
+            </tr>
+            <tr data-href="lec4.html">
+              <td class="num"><a href="lec4.html">Lecture 4</a></td>
+              <td><a href="lec4.html">Semantic HTML and HTML Forms</a></td>
+            </tr>
+            <tr data-href="lec5.html">
+              <td class="num"><a href="lec5.html">Lecture 5</a></td>
+              <td><a href="lec5.html">Cascading Style Sheets (CSS) Fundamentals</a></td>
+            </tr>
+            <tr data-href="lec6.html">
+              <td class="num"><a href="lec6.html">Lecture 6</a></td>
+              <td><a href="lec6.html">The CSS Box Model and Display</a></td>
+            </tr>
+            <tr data-href="lec7.html">
+              <td class="num"><a href="lec7.html">Lecture 7</a></td>
+              <td><a href="lec7.html">CSS Positioning and Stacking</a></td>
+            </tr>
+            <tr data-href="lec8.html">
+              <td class="num"><a href="lec8.html">Lecture 8</a></td>
+              <td><a href="lec8.html">CSS3 Features</a></td>
+            </tr>
+            <tr class="empty-row" id="empty-row" hidden>
+              <td colspan="2">No lectures found. Try a different keyword.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">&copy; 2026 Ghulam Aysha (FA24-BSE-112) &middot; CSC336 Web Technologies &middot; Assignment 1</footer>
+
+  <script>
+    const input = document.getElementById("lecture-search");
+    const rows = document.querySelectorAll("#lecture-rows tr[data-href]");
+    const emptyRow = document.getElementById("empty-row");
+    const count = document.getElementById("result-count");
+
+    rows.forEach(function (row) {
+      row.addEventListener("click", function () {
+        window.location.href = row.dataset.href;
+      });
+    });
+
+    input.addEventListener("input", function () {
+      const query = input.value.trim().toLowerCase();
+      let visible = 0;
+
+      rows.forEach(function (row) {
+        const match = row.textContent.toLowerCase().includes(query);
+        row.hidden = !match;
+        if (match) visible++;
+      });
+
+      emptyRow.hidden = visible !== 0;
+      count.textContent = "Showing " + visible + " of " + rows.length + " lectures";
+    });
+  </script>
+</body>
+</html>

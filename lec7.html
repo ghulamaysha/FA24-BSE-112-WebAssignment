@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lecture 7</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="index.html">
+        <img src="images/comsats-logo.png" alt="COMSATS University logo" onerror="this.style.display='none'">
+        <span>Web Technologies</span>
+      </a>
+      <nav><a href="index.html">Home</a></nav>
+    </div>
+  </div>
+
+  <header class="page-head">
+    <p class="eyebrow"> Lecture 7</p>
+    <h1>CSS Positioning and Stacking</h1>
+    <p class="tagline">Placing elements exactly where you want them</p>
+  </header>
+
+  <main class="container">
+    <article class="card">
+      <h2>Summary</h2>
+      <p>This lecture starts from normal document flow and then shows how relative, absolute, fixed and sticky positioning move elements. It explains the containing block, the order in which overlapping elements stack, and common float problems.</p>
+
+      <h2>Topics Covered</h2>
+      <ul>
+        <li><strong>Document Flow</strong>
+          <ul>
+            <li>Normal flow and static positioning</li>
+          </ul>
+        </li>
+        <li><strong>Positioning</strong>
+          <ul>
+            <li>relative, absolute, fixed and sticky</li>
+            <li>Offset properties and the containing block</li>
+          </ul>
+        </li>
+        <li><strong>Stacking and Floats</strong>
+          <ul>
+            <li>z-index and stacking contexts</li>
+            <li>Floats, clearing and layout pitfalls</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h2>Example Code</h2>
+<pre><code>.pos-parent {
+  position: relative;
+  height: 110px;
+}
+.pos-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}</code></pre>
+
+      <h2>Output</h2>
+      <div class="output">
+        <div class="pos-parent">
+          <span class="pos-badge">Pinned top right</span>
+        </div>
+      </div>
+    </article>
+
+    <nav class="pager">
+      <a href="index.html">Home</a>
+      <a href="lec6.html">Previous Lecture</a>
+      <a href="lec8.html">Next Lecture</a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">&copy; 2026 Ghulam Aysha (FA24-BSE-112) &middot; CSC336 Web Technologies</footer>
+</body>
+</html>

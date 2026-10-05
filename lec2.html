@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lecture 2</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="index.html">
+        <img src="images/comsats-logo.png" alt="COMSATS University logo" onerror="this.style.display='none'">
+        <span>Web Technologies</span>
+      </a>
+      <nav><a href="index.html">Home</a></nav>
+    </div>
+  </div>
+
+  <header class="page-head">
+    <p class="eyebrow"> Lecture 2</p>
+    <h1>Tiered Web Architecture</h1>
+    <p class="tagline">How an application is split into cooperating parts</p>
+  </header>
+
+  <main class="container">
+    <article class="card">
+      <h2>Summary</h2>
+      <p>This lecture explains how web applications are organised into tiers. It compares one-tier, two-tier and three-tier (N-tier) designs and shows how to choose between them by weighing scalability, maintainability and cost.</p>
+
+      <h2>Topics Covered</h2>
+      <ul>
+        <li><strong>Fundamentals</strong>
+          <ul>
+            <li>Tiers vs. layers</li>
+            <li>Separation of concerns</li>
+          </ul>
+        </li>
+        <li><strong>Architectures</strong>
+          <ul>
+            <li>One-tier (standalone) architecture with examples</li>
+            <li>Two-tier (client-server): advantages and limitations</li>
+            <li>Three-tier and N-tier architecture</li>
+          </ul>
+        </li>
+        <li><strong>Choosing an Architecture</strong>
+          <ul>
+            <li>Scalability</li>
+            <li>Maintainability</li>
+            <li>Cost trade-offs</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h2>Example Code</h2>
+<pre><code>&lt;div class="tier-stack"&gt;
+  &lt;div class="t1"&gt;Presentation Tier (Browser)&lt;/div&gt;
+  &lt;div class="t2"&gt;Application Tier (Server Logic)&lt;/div&gt;
+  &lt;div class="t3"&gt;Data Tier (Database)&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+      <h2>Output</h2>
+      <div class="output">
+        <div class="tier-stack">
+          <div class="t1">Presentation Tier (Browser)</div>
+          <div class="t2">Application Tier (Server Logic)</div>
+          <div class="t3">Data Tier (Database)</div>
+        </div>
+      </div>
+    </article>
+
+    <nav class="pager">
+      <a href="index.html">Home</a>
+      <a href="lec1.html">Previous Lecture</a>
+      <a href="lec3.html">Next Lecture</a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">&copy; 2026 Ghulam Aysha (FA24-BSE-112) &middot; CSC336 Web Technologies</footer>
+</body>
+</html>
